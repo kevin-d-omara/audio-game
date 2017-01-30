@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db080c3f161f1946bcc7706c77f2cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recordingLengthSec: 1
+  recordingLengthSec: 5
 --- !u!1 &243069493
 GameObject:
   m_ObjectHideFlags: 0

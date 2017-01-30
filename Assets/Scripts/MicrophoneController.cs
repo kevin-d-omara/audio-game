@@ -47,13 +47,15 @@ namespace AudioGame
 
         private void StartRecording()
         {
-            Microphone.Start(device.Name, false, recordingLengthSec, device.MaxFreq);
+            Debug.Log("starting to record ...");
+            LastClip = Microphone.Start(device.Name, false, recordingLengthSec, device.MaxFreq);
         }
 
         private void StopRecording()
         {
             if (Microphone.IsRecording(device.Name))
             {
+                Debug.Log("ending recording ...");
                 Microphone.End(device.Name);
             }
         }
